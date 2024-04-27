@@ -1,7 +1,7 @@
-package intellispaces.dynamicproxy.factory;
+package tech.intellispacesframework.dynamicproxy.factory;
 
 import com.google.auto.service.AutoService;
-import intellispaces.dynamicproxy.tracker.BasicTracker;
+import tech.intellispacesframework.dynamicproxy.tracker.BasicTracker;
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.implementation.MethodDelegation;
 

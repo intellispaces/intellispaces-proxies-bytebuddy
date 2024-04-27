@@ -1,6 +1,6 @@
-package intellispaces.dynamicproxy.factory;
+package tech.intellispacesframework.dynamicproxy.factory;
 
-import intellispaces.dynamicproxy.tracker.BasicTracker;
+import tech.intellispacesframework.dynamicproxy.tracker.BasicTracker;
 import net.bytebuddy.implementation.bind.annotation.AllArguments;
 import net.bytebuddy.implementation.bind.annotation.Origin;
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
