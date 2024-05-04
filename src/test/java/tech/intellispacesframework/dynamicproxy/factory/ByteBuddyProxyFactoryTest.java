@@ -1,6 +1,5 @@
 package tech.intellispacesframework.dynamicproxy.factory;
 
-import tech.intellispacesframework.dynamicproxy.factory.ByteBuddyDynamicProxyFactory;
 import tech.intellispacesframework.dynamicproxy.test.DynamicProxyTest;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +10,22 @@ public class ByteBuddyProxyFactoryTest {
   private final ByteBuddyDynamicProxyFactory factory = new ByteBuddyDynamicProxyFactory();
 
   @Test
-  public void testTracker_whenInterface() {
-    DynamicProxyTest.testTracker_whenInterface(factory);
+  public void testCreateTrackedClass_whenInterface() {
+    DynamicProxyTest.testCreateTrackedClass_whenInterface(factory);
+  }
+
+  @Test
+  public void testCreateTrackedClass_whenAbstractClass() {
+    DynamicProxyTest.testCreateTrackedClass_whenAbstractClass(factory);
+  }
+
+  @Test
+  public void testCreateProxyClass_whenAbstractClass_andAbstractMethodHandler() {
+    DynamicProxyTest.testCreateProxyClass_whenAbstractClass_andAbstractMethodHandler(factory);
+  }
+
+  @Test
+  public void testCreateProxyClass_whenAbstractClass_andSpecificMethodHandler() {
+    DynamicProxyTest.testCreateProxyClass_whenAbstractClass_andSpecificMethodHandler(factory);
   }
 }
