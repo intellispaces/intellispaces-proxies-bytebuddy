@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>intellispacesframework-dynamic-proxy-bytebuddy</artifactId>
+    <artifactId>intellispacesframework-dynamicproxy-bytebuddy</artifactId>
     <packaging>jar</packaging>
 
     <build>
@@ -31,7 +31,7 @@
         <!-- Intellispaces -->
         <dependency>
             <groupId>intellispaces</groupId>
-            <artifactId>intellispacesframework-dynamic-proxy</artifactId>
+            <artifactId>intellispacesframework-dynamicproxy</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -50,7 +50,7 @@
         <!-- Testing -->
         <dependency>
             <groupId>intellispaces</groupId>
-            <artifactId>intellispacesframework-dynamic-proxy-test</artifactId>
+            <artifactId>intellispacesframework-dynamicproxy-test</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
