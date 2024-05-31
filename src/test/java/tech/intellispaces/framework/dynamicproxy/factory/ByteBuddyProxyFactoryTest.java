@@ -1,6 +1,6 @@
-package tech.intellispacesframework.dynamicproxy.factory;
+package tech.intellispaces.framework.dynamicproxy.factory;
 
-import tech.intellispacesframework.dynamicproxy.test.DynamicProxyTest;
+import tech.intellispaces.framework.dynamicproxy.test.DynamicProxyTest;
 import org.junit.jupiter.api.Test;
 
 /**

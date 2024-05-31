@@ -1,8 +1,8 @@
-package tech.intellispacesframework.dynamicproxy.factory;
+package tech.intellispaces.framework.dynamicproxy.factory;
 
 import net.bytebuddy.implementation.bind.annotation.Origin;
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
-import tech.intellispacesframework.commons.exception.UnexpectedViolationException;
+import tech.intellispaces.framework.commons.exception.UnexpectedViolationException;
 
 import java.lang.reflect.Method;
 

@@ -1,4 +1,4 @@
-package tech.intellispacesframework.dynamicproxy.factory;
+package tech.intellispaces.framework.dynamicproxy.factory;
 
 import com.google.auto.service.AutoService;
 import net.bytebuddy.description.modifier.Visibility;
@@ -6,12 +6,12 @@ import net.bytebuddy.dynamic.DynamicType;
 import net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy;
 import net.bytebuddy.implementation.FieldAccessor;
 import net.bytebuddy.implementation.MethodCall;
-import tech.intellispacesframework.commons.exception.UnexpectedViolationException;
-import tech.intellispacesframework.dynamicproxy.proxy.contract.MethodHandler;
-import tech.intellispacesframework.dynamicproxy.proxy.contract.ProxyContract;
+import tech.intellispaces.framework.commons.exception.UnexpectedViolationException;
+import tech.intellispaces.framework.dynamicproxy.proxy.contract.MethodHandler;
+import tech.intellispaces.framework.dynamicproxy.proxy.contract.ProxyContract;
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.implementation.MethodDelegation;
-import tech.intellispacesframework.dynamicproxy.tracker.Tracker;
+import tech.intellispaces.framework.dynamicproxy.tracker.Tracker;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;

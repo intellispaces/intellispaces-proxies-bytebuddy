@@ -1,9 +1,9 @@
-package tech.intellispacesframework.dynamicproxy.factory;
+package tech.intellispaces.framework.dynamicproxy.factory;
 
 import net.bytebuddy.implementation.bind.annotation.AllArguments;
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import net.bytebuddy.implementation.bind.annotation.This;
-import tech.intellispacesframework.dynamicproxy.proxy.contract.MethodHandler;
+import tech.intellispaces.framework.dynamicproxy.proxy.contract.MethodHandler;
 
 public class ProxyMethodInterceptor {
   private final MethodHandler handler;
