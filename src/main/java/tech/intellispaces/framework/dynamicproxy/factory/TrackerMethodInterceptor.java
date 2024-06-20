@@ -15,6 +15,6 @@ public class TrackerMethodInterceptor {
   @RuntimeType
   public Object intercept(@This TrackedObject trackedObject, @Origin Method method, @AllArguments Object[] arguments) {
     trackedObject.___tracker().addInvokedMethod(method);
-    return TypeFunctions.getAnyValidValueOfClass(method.getReturnType());
+    return TypeFunctions.getDefaultValueOf(method.getReturnType());
   }
 }
