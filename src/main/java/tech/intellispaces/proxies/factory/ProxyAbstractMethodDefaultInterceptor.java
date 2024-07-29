@@ -1,4 +1,4 @@
-package tech.intellispaces.dynamicproxy.factory;
+package tech.intellispaces.proxies.factory;
 
 import net.bytebuddy.implementation.bind.annotation.Origin;
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;

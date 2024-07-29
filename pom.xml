@@ -31,7 +31,7 @@
         <!-- Intellispaces -->
         <dependency>
             <groupId>intellispaces</groupId>
-            <artifactId>intellispaces-dynamicproxy</artifactId>
+            <artifactId>intellispaces-proxies</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -50,7 +50,7 @@
         <!-- Testing -->
         <dependency>
             <groupId>intellispaces</groupId>
-            <artifactId>intellispaces-dynamicproxy-test</artifactId>
+            <artifactId>intellispaces-proxies-test</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
