@@ -1,10 +1,10 @@
-package tech.intellispaces.framework.dynamicproxy.factory;
+package tech.intellispaces.dynamicproxy.factory;
 
 import net.bytebuddy.implementation.bind.annotation.AllArguments;
 import net.bytebuddy.implementation.bind.annotation.Origin;
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import net.bytebuddy.implementation.bind.annotation.This;
-import tech.intellispaces.framework.commons.type.TypeFunctions;
+import tech.intellispaces.commons.type.TypeFunctions;
 
 import java.lang.reflect.Method;
 

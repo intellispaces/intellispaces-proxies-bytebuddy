@@ -1,4 +1,4 @@
-package tech.intellispaces.framework.dynamicproxy.factory;
+package tech.intellispaces.dynamicproxy.factory;
 
 import com.google.auto.service.AutoService;
 import net.bytebuddy.description.modifier.Visibility;
@@ -6,12 +6,12 @@ import net.bytebuddy.dynamic.DynamicType;
 import net.bytebuddy.dynamic.scaffold.subclass.ConstructorStrategy;
 import net.bytebuddy.implementation.FieldAccessor;
 import net.bytebuddy.implementation.MethodCall;
-import tech.intellispaces.framework.commons.exception.UnexpectedViolationException;
-import tech.intellispaces.framework.dynamicproxy.proxy.contract.MethodHandler;
-import tech.intellispaces.framework.dynamicproxy.proxy.contract.ProxyContract;
+import tech.intellispaces.commons.exception.UnexpectedViolationException;
+import tech.intellispaces.dynamicproxy.proxy.contract.MethodHandler;
+import tech.intellispaces.dynamicproxy.proxy.contract.ProxyContract;
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.implementation.MethodDelegation;
-import tech.intellispaces.framework.dynamicproxy.tracker.Tracker;
+import tech.intellispaces.dynamicproxy.tracker.Tracker;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -31,7 +31,7 @@ public class ByteBuddyDynamicProxyFactory implements DynamicProxyFactory {
 
   @Override
   @SuppressWarnings("unchecked")
-  public <T> Class<T> createTrackedClass(Class<T> aClass) {
+  public <T> Class<T> getTrackedClass(Class<T> aClass) {
     try {
       Class<?> subclass = aClass.isInterface() ? Object.class : aClass;
       List<Class<?>> implInterfaces = aClass.isInterface() ? List.of(TrackedObject.class, aClass) : List.of(TrackedObject.class);
@@ -57,7 +57,7 @@ public class ByteBuddyDynamicProxyFactory implements DynamicProxyFactory {
 
   @Override
   @SuppressWarnings("unchecked")
-  public <T> Class<T> createProxyClass(ProxyContract<T> contract) {
+  public <T> Class<T> getProxyClass(ProxyContract<T> contract) {
     DynamicType.Builder<T> proxyBuilder;
     if (contract.type().isInterface()) {
       List<Class<?>> implInterfaces = new ArrayList<>(1 + contract.additionalInterfaces().size());

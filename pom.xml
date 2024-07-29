@@ -3,7 +3,7 @@
 
     <parent>
         <groupId>intellispaces</groupId>
-        <artifactId>intellispacesframework-parent-pom</artifactId>
+        <artifactId>intellispaces-parent-pom</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -31,7 +31,7 @@
         <!-- Intellispaces -->
         <dependency>
             <groupId>intellispaces</groupId>
-            <artifactId>intellispacesframework-dynamicproxy</artifactId>
+            <artifactId>intellispaces-dynamicproxy</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -50,7 +50,7 @@
         <!-- Testing -->
         <dependency>
             <groupId>intellispaces</groupId>
-            <artifactId>intellispacesframework-dynamicproxy-test</artifactId>
+            <artifactId>intellispaces-dynamicproxy-test</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
